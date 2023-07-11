@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/icon/favicon.ico">
+        <!-- Include the fontawesome icons from CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/custom_adm.css">
+        <title>Forms</title>
+    </head>
+    <body>
+        <navbar class="navbar">
+            <!-- Menu bar  -->
+            <div class="navbar-content">
+                <div class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <img src="images/logo/design-responsivo.png" alt="logo" class="logo">
+            </div>
+            <!-- Notification  -->
+            <div class="navbar-content">
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="number">2</span>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <li>
+                                <img src="images/pngwing.com.png" alt="Usuario" width="40">
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/pngwing.com.png" alt="Usuario" width="40">
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <!-- Settings Menu -->
+                <div class="avatar">
+                    <img src="images/pngwing.com.png" alt="Usuario" width="40">
+                    <div class="dropdown-menu setting">
+                        <div class="item">
+                            <span class="fa-solid fa-user"></span> Perfil
+                        </div>
+                        <div class="item">
+                            <span class="fa-solid fa-gear"></span> Configuração
+                        </div>
+                        <div class="item">
+                            <span class="fa-solid fa-arrow-right-from-bracket"></span> Sair
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </navbar>
+
+        <div class="content">
+            <!-- Start Sidebar -->
+            <div class="sidebar">
+                <a href="index.html" class="sidebar-nav ">
+                    <i class="icon fa-solid fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="listar.html" class="sidebar-nav">
+                    <i class="icon fa-solid fa-users"></i>
+                    <span>Listar</span>
+                </a>
+
+                <a href="forms.html" class="sidebar-nav active">
+                    <i class="icon fa-solid fa-file-lines"></i>
+                    <span>Formulário</span>
+                </a>
+
+                <a href="visualize.html" class="sidebar-nav">
+                    <i class="icon fa-solid fa-eye"></i>
+                    <span>Visualizar</span>
+                </a>
+
+                <a href="login.html" class="sidebar-nav">
+                    <i class="icon fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Sair</span>
+                </a>
+            </div>
+            <!-- End Sidebar -->
+            <!-- Start Admin content -->
+            <div class="wrapper">
+                <div class="row">
+                    <div class="top-list">
+                        <span class="title-content">Formulário</span>
+                        <div class="top-list-right">
+                            <button type="button" class="btn-info"><a href="listar.html">Listar</a></button>
+                        </div>
+                    </div>
+
+                    <div class="content-adm">
+                        <form class="form-adm">
+                            <div class="row-input">
+                                <!-- Nome -->
+                                <div class="column">
+                                    <label class="title-input">Nome</label>
+                                    <input type="text" name="name" id="name" class="input-adm"
+                                    placeholder="Nome completo">
+                                </div>
+                                <!-- Email -->
+                                <div class="column">
+                                    <label class="title-input">E-mail</label>
+                                    <input type="text" name="email" id="email" class="input-adm"
+                                    placeholder="Seu E-mail">
+                                </div>
+                                <div class="column">
+                                    <label class="title-input">Repetir E-mail</label>
+                                    <input type="text" name="repeat-email" id="repeat-email" class="input-adm"
+                                    placeholder="Repetir E-mail">
+                                </div>
+                                <!-- Senha -->
+                                <div class="column">
+                                    <label class="title-input">Senha</label>
+                                    <input type="password" name="password" id="password" class="input-adm"
+                                    placeholder="Senha">
+                                </div>
+                                <div class="column">
+                                    <label class="title-input">Repetir Senha</label>
+                                    <input type="password" name="repeat-password" id="repeat-password" class="input-adm"
+                                    placeholder="Repetir Senha">
+                                </div>
+                                <div class="column">
+                                    <label class="title-input">Gênero</label>
+                                    <select name="gender" id="gender" class="select-adm">
+                                        <option>Selecione</option>
+                                        <option>Masculino</option>
+                                        <option>Feminino</option>
+                                        <option>Outro</option>
+                                    </select>
+                                </div>
+                                <!-- Button Submit -->
+                                <button type="submit" class="btn-success">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- End Admin content -->
+        </div>
+
+        <script src="js/custom_adm.js"></script>
+    </body>
+</html>

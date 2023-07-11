@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/icon/favicon.ico">
+        <!-- Include the fontawesome icons from CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/custom_adm.css">
+        <title>List</title>
+    </head>
+    <body>
+        <navbar class="navbar">
+            <!-- Menu bar  -->
+            <div class="navbar-content">
+                <div class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <img src="images/logo/design-responsivo.png" alt="logo" class="logo">
+            </div>
+            <!-- Notification  -->
+            <div class="navbar-content">
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="number">2</span>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <li>
+                                <img src="images/pngwing.com.png" alt="Usuario" width="40">
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/pngwing.com.png" alt="Usuario" width="40">
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <!-- Settings Menu -->
+                <div class="avatar">
+                    <img src="images/pngwing.com.png" alt="Usuario" width="40">
+                    <div class="dropdown-menu setting">
+                        <div class="item">
+                            <span class="fa-solid fa-user"></span> Perfil
+                        </div>
+                        <div class="item">
+                            <span class="fa-solid fa-gear"></span> Configuração
+                        </div>
+                        <div class="item">
+                            <span class="fa-solid fa-arrow-right-from-bracket"></span> Sair
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </navbar>
+
+        <div class="content">
+            <!-- Start Sidebar -->
+            <div class="sidebar">
+                <a href="index.html" class="sidebar-nav">
+                    <i class="icon fa-solid fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="login.html" class="sidebar-nav active">
+                    <i class="icon fa-solid fa-users"></i>
+                    <span>Listar</span>
+                </a>
+
+                <a href="forms.html" class="sidebar-nav">
+                    <i class="icon fa-solid fa-file-lines"></i>
+                    <span>Formulário</span>
+                </a>
+
+                <a href="visualize.html" class="sidebar-nav">
+                    <i class="icon fa-solid fa-eye"></i>
+                    <span>Visualizar</span>
+                </a>
+
+                <a href="login.html" class="sidebar-nav">
+                    <i class="icon fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Sair</span>
+                </a>
+            </div>
+            <!-- End Sidebar -->
+            <!-- Start Admin content -->
+            <div class="wrapper">
+                <div class="row">
+                    <div class="top-list">
+                        <span class="title-content">Listar</span>
+                        <div class="top-list-right">
+                            <button type="button" class="btn-success"><a href="forms.html" class="fa-solid fa-square-plus"></a></button>
+                        </div>
+                    </div>
+
+                    <div class="search-list">
+                        <form>
+                            <span class="search-form-input"><input type="text" placeholder="Search"></span>
+                            <span class="search-form-input"><button><i class="fa-solid fa-search"></i></button></span>
+                        </form>
+                    </div>
+
+                    <table class="table-list">
+                        <thead class="list-head">
+                            <tr>
+                                <th class="list-head-content">ID</th>
+                                <th class="list-head-content">Nome</th>
+                                <th class="list-head-content">E-mail</th>
+                                <th class="list-head-content">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list-body">
+                            <tr>
+                                <td class="list-body-content">1</td>
+                                <td class="list-body-content">Guilherme Filheiro</td>
+                                <td class="list-body-content">guilhermefilheiro@gmail.com</td>
+                                <td class="list-body-content actions">
+                                    <button type="button" class="btn-primary"><a href="visualize.html" class="fa-solid fa-eye"></a></button>
+                                    <button type="button" class="btn-warning"><a href="forms.html" class="fa-solid fa-edit"></a></button>
+                                    <button type="button" class="btn-danger"><a class="fa-solid fa-trash"></a></button>                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="content-pagination">
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#" class="active">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Admin content -->
+        </div>
+
+        <script src="js/custom_adm.js"></script>
+    </body>
+</html>
